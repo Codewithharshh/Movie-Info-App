@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}   
+
+body{
+background:#474B57;
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+height:650px; /*600px*/
+width:400px;
+background:#1D1D27;
+position:relative;
+top:600px;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:10px;
+overflow:hidden;
+}
+
+.search{
+padding:10px;
+width:100%;
+display:flex;
+align-items:center;
+}
+
+.search > input{
+all:unset;
+height:40px;
+width:245px;
+color:white;
+margin-left:10px;
+margin-top:10px;
+background:#282834;
+border-radius:5px;
+padding-left:15px;
+}
+
+.search > button{
+all:unset;
+padding:8px;
+width:70px;
+background:#F7AF37;
+color:#1D1D27;
+text-align:center;
+border-radius:5px;
+margin-left:15px;
+margin-top:10px;
+cursor:pointer;
+}
+
+.result{
+height:480px;
+width:100%;
+}
+
+.message{
+color:grey;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+white-space:nowrap;
+margin-top:20px;
+font-size:20px;
+}
+
+.poster{
+height:200px;
+width:150px;
+border-radius:10px;
+position:absolute;
+top:30%;
+left:50%;
+transform:translate(-50%,-50%);
+overflow:hidden;
+}
+
+.poster>img {
+height:200px;
+width:150px;
+object-fit:cover;
+}
+
+.title,.details,.rating{
+color:white;    
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:16px;
+}
+
+.rating{
+width:100px;
+display:flex;
+justify-content:center;
+align-items:center;
+top:55%;
+font-size:13px;
+}
+
+ .fa-star{
+position:relative;   
+left:-5px;
+color:yellow;
+}
+
+.details{
+height:40px; 
+width:100%;
+font-size:18px;
+top:60%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#4C4C56;
+}
+
+.details > span{
+margin-left:5px;        
+}
+
+.Genre{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-pack: distribute;
+justify-content: space-around;        
+}
+
+.Genre div{
+border: 1px solid #a0a0a0;
+font-size:.7em;
+padding: 0.2em 1.6em;
+border-radius: 0.4em;
+font-weight: 300; 
+color:white;
+position:relative;
+top:350px;
+}
+
+.plot{
+position:absolute;
+bottom:70px;
+height:120px;
+width:95%;
+font-size:1.45vw;
+text-size-adjust:100%;
+}
+
+.cast{
+position:absolute;
+bottom:0;
+height:70px;
+width:95%;
+font-size:16px;
+text-size-adjust:100%;
+}
+
+.cast > h2,.plot > h2{
+font-size:18px;
+margin-left:20px;
+margin-top:5px;
+color:white;
+}
+
+.cast > span,.plot > span{
+position:relative;   
+left:20px;
+color:#4C4C56;
+}
+
+.plot > span{
+ top:0px;       
+}
+
+.cast > span{
+font-size:1.5vw;       
+}
